@@ -1,0 +1,105 @@
+/* Общие стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+
+/* Стили для формы конвертера */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.div{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 0 10px 20px 0;
+    width: 505px;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+select {
+    padding: 10px 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;   
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    cursor:pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+}
+
+
+.p_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.p{
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    height: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 166px;
+
+}
+
+
+
+
+
+
+
+input[type="number"]:hover,
+select:hover {
+  background-color: whitesmoke;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+  

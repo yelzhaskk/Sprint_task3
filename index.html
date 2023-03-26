@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Конвертер валют</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+	<form>
+        <div class="div">
+            <div class="divv">
+                <label for="amount">Введите сумму:</label>
+		        <input type="number" id="amount" name="amount" oninput="moneyConventer(this.value)" onchange="
+                moneyConventer(this.value)" onmouseleave="onShow()">
+            </div>           
+
+            <select id="money" name="money">
+                <option value="kzt">KZT</option>
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+            </select>
+        </div>
+
+
+
+		
+        <div class="p_wrapper">
+            <div class="p">
+                <p>KZT (tenge)</p>
+                <span id="outputKzt"></span>
+            </div>
+            <div class="p">
+                <p>USD (dollar)</p>
+                <span id="outputUsd"></span>
+            </div>
+            <div class="p">
+                <p>EUR: (euro)</span></p>
+                <span id="outputEur"></span>
+            </div>            
+        </div>        
+    </form>     
+        
+	<script src="script.js"></script>
+	
+</body>
+</html>
